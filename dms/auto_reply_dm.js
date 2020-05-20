@@ -51,7 +51,7 @@ function auto_reply_to_dms(){
                                 recipient_id: message.message_create.sender_id,
                             },
                             message_data: {
-                                text: `Hi @${senderScreenName}! 👋`
+                                text: `Hi @${senderScreenName}! 👋 This is an automated message, @jheeeeezy is the guy you want to talk to!`
                             }
                         }
                     }
