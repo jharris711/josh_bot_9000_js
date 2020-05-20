@@ -79,7 +79,7 @@ function auto_reply_to_dms(){
   }
 })();
 }
-
+auto_reply_to_dms()
 
 apps.listen(3000, () => {
     console.log(`Auto-Reply to DM launched on port : 3000`)
