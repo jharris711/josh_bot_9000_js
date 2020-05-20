@@ -1,3 +1,5 @@
+const express = require('express')
+const apps = express()
 const { Autohook } = require('twitter-autohook');
 const request = require('request');
 const util = require('util');
@@ -77,8 +79,10 @@ function auto_reply_to_dms(){
   }
 })();
 }
-module.exports = {
-    auto_reply_to_dms
-}
+
+
+apps.listen(3000, () => {
+    console.log(`Auto-Reply to DM launched on port : 3000`)
+})
 
 
