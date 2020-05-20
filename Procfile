@@ -1,2 +1,2 @@
 web: node index.js
-worker: node dms/auto_reply_dms.js
+web: node dms/auto_reply_dms.js
